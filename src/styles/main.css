@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  word-spacing: 1px;
+}
+
+@theme {
+  /* Font Family */
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  /* Colors */
+
+  /* Greys / Backgrounds */
+  --color-black: #000112;
+  --color-very-dark-grey: #20212c; /* Dark BG */
+  --color-dark-grey: #2b2c37;
+  --color-lines-dark: #3e3f4e;
+  --color-medium-grey: #828fa3;
+  --color-lines-light: #e4ebfa;
+  --color-light-grey: #f4f7fd; /* Light BG */
+  --color-white: #ffffff;
+
+  /* Primary / Accent */
+  --color-main-purple: #635fc7;
+  --color-main-purple-hover: #a8a4ff;
+
+  /* Error States */
+  --color-red: #ea5555;
+  --color-red-hover: #ff9898;
+
+  --color-white: #ffffff;
+}
+
+/* Hide scrollbars in modern browsers */
+*::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Edge, and Safari */
+}
