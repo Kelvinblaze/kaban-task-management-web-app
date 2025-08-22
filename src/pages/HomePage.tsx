@@ -1,9 +1,13 @@
+import EmptyBoard from "../components/core/EmptyBoard";
 import Dashboard from "../layouts/Dashboard";
 
 const HomePage = () => {
   return (
     <Dashboard>
-      <div></div>
+      {/* Empty Board Container */}
+      <div className="h-screen grid place-content-center">
+        <EmptyBoard />
+      </div>
     </Dashboard>
   );
 };

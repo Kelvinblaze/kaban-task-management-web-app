@@ -8,7 +8,7 @@ interface DashboardProps {
 
 const Dashboard: React.FC<DashboardProps> = ({ children }) => {
   return (
-    <div className="flex h-screen">
+    <div className="lg:flex lg:h-screen">
       <SideBar />
 
       <div className="bg-light-grey dark:bg-very-dark-grey min-h-screen w-full">
