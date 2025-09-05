@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/layout/Navbar";
 import SideBar from "../components/layout/SideBar";
 
@@ -7,12 +7,14 @@ interface DashboardProps {
 }
 
 const Dashboard: React.FC<DashboardProps> = ({ children }) => {
+  const [isSideBarOpen, setIsSideBarOpen] = useState(true);
+
   return (
-    <div className="lg:flex lg:h-screen">
-      <SideBar />
+    <div className="flex h-screen">
+      <SideBar isOpen={isSideBarOpen} setIsOpen={setIsSideBarOpen} />
 
       <div className="bg-light-grey dark:bg-very-dark-grey min-h-screen w-full">
-        <Navbar />
+        <Navbar isSideBarOpen={isSideBarOpen} />
         <main>{children}</main>
       </div>
     </div>
